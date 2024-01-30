@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+/home/nilodude/desarrollo/picow/pico/elmio/build/CMakeFiles/ELF2UF2Build
+/home/nilodude/desarrollo/picow/pico/elmio/build/CMakeFiles/ELF2UF2Build.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/CMakeFiles/ELF2UF2Build-complete.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/home/nilodude/desarrollo/picow/pico/elmio/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule
