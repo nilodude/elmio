@@ -13,6 +13,7 @@ const uint LED_PIN = 25; //GPIO25
 const uint BUTTON1_PIN = 16; //GPIO16
 const uint BUTTON2_PIN = 17; //GPIO17
 const uint LEDS_PIN = 15; //GPIO15
+const uint NUMPIXELS = 2;
 
 static inline void put_pixel(uint32_t pixel_grb) {
   pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
@@ -43,7 +44,7 @@ int main() {
 
     gpio_init(BUTTON1_PIN);
     gpio_set_dir(BUTTON1_PIN, GPIO_IN);
-    // gpio_pull_up(BUTTON1_PIN);
+    gpio_pull_up(BUTTON1_PIN);
 
     gpio_init(BUTTON2_PIN);
     gpio_set_dir(BUTTON2_PIN, GPIO_IN);
@@ -56,22 +57,27 @@ int main() {
     char str[12];
 
     ws2812_program_init(pio, sm, offset, LEDS_PIN, 800000, false);
-    bool purple = true;
+    bool shouldSwitch = false;
 
     while (1) {
         bool button1 = gpio_get(BUTTON1_PIN);
         bool button2 = gpio_get(BUTTON2_PIN);
         
+        if(!button1){
+          shouldSwitch = !shouldSwitch;
+        }
+
         gpio_put(LED_PIN, button1);
-
-        // printf("%d %d\n", button1, button2);
-
-        put_pixel(purple ? urgb_u32(0x10, 0, 0) : urgb_u32(0, 0, 0x10));
-        printf("%s\n", purple ? "red" : "blue");
         
-        purple = !purple;
+        for (int i = 0; i <= NUMPIXELS; i++) {
+          put_pixel(shouldSwitch ? urgb_u32(0x10, 0, 0) : urgb_u32(0, 0, 0x10));
+          put_pixel(!shouldSwitch ? urgb_u32(0x10, 0, 0) : urgb_u32(0, 0, 0x10));
+          // sleep_ms(100);
+        }
 
         sleep_ms(100);
+        printf("%s\n", button1 ? "red" : "blue");
+        
 
         // // Clear all pixels
         // for (int i = 0; i <= 1; i++) {
