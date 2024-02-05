@@ -117,6 +117,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/hw"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   )
 
 # The set of dependency files which are needed:
@@ -151,9 +153,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d"

@@ -935,6 +935,30 @@ home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_divider/div
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+
+# target to build an object file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
 home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
 
@@ -1014,6 +1038,30 @@ home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq_han
 home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
@@ -1817,6 +1865,9 @@ help:
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
@@ -1827,6 +1878,9 @@ help:
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"

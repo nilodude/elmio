@@ -16,6 +16,10 @@ CMakeFiles/elmio.dir/elmio.c.obj: \
  /usr/include/newlib/sys/timespec.h /usr/include/newlib/sys/_timespec.h \
  /usr/include/newlib/sys/_pthreadtypes.h /usr/include/newlib/sys/sched.h \
  /usr/include/newlib/machine/types.h /usr/include/newlib/sys/stdio.h \
+ /usr/include/newlib/string.h /usr/include/newlib/sys/_locale.h \
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
+ /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h \
+ /usr/include/newlib/alloca.h \
  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico.h \
  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
@@ -59,4 +63,12 @@ CMakeFiles/elmio.dir/elmio.c.obj: \
  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
- /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+ /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+ /home/nilodude/desarrollo/picow/pico/elmio/ws2812.pio.h

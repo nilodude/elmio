@@ -31,6 +31,13 @@ CMakeFiles/elmio.dir/elmio.c.obj: ../elmio.c \
   /usr/include/newlib/sys/sched.h \
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
@@ -74,7 +81,15 @@ CMakeFiles/elmio.dir/elmio.c.obj: ../elmio.c \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
-  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  ../ws2812.pio.h
 
 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/tusb_option.h \
@@ -1515,6 +1530,61 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
 
+CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  generated/pico_base/pico/version.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
+
 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -1630,6 +1700,52 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+
+CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h
 
 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c \
   /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
@@ -2932,8 +3048,6 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c:
@@ -2954,6 +3068,10 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
 
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h:
+
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
@@ -2970,12 +3088,6 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
-
-/usr/include/newlib/c++/10.3.1/cstdlib:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/include/pico/util/queue.h:
@@ -2986,9 +3098,9 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/include/pico/util/datetime.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/datetime.c:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_time/timeout_helper.c:
 
@@ -3008,37 +3120,15 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/tusb.c:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
-
-/usr/include/newlib/assert.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
-
-/usr/include/newlib/sys/lock.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
-
-/usr/include/newlib/machine/ieeefp.h:
-
-/usr/include/newlib/sys/_types.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:
 
@@ -3046,21 +3136,15 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/boards/include/boards/pico.h:
 
 /usr/include/newlib/newlib.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/platform.c:
+/usr/include/newlib/sys/lock.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
 
@@ -3078,6 +3162,14 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
 
+/usr/include/newlib/assert.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
+
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/assert.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico/error.h:
@@ -3088,9 +3180,17 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_base/include/pico.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/tusb.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
+
+/usr/include/newlib/sys/sched.h:
+
+/usr/include/newlib/alloca.h:
+
+/usr/include/newlib/sys/reent.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
 
@@ -3103,6 +3203,8 @@ generated/pico_base/pico/config_autogen.h:
 /usr/include/newlib/sys/features.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h:
+
+/usr/include/newlib/sys/string.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
 
@@ -3126,11 +3228,35 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/sys/_sigset.h:
 
+/usr/include/newlib/string.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:
+
+/usr/include/newlib/sys/_types.h:
+
+/usr/include/newlib/machine/ieeefp.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
+
 /usr/include/newlib/sys/config.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/device/usbd.c:
 
@@ -3143,6 +3269,10 @@ generated/pico_base/pico/config_autogen.h:
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_debug.h:
+
+/usr/include/newlib/machine/stdlib.h:
+
+/usr/include/newlib/sys/_stdint.h:
 
 /usr/include/newlib/sys/stdio.h:
 
@@ -3158,6 +3288,12 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_time/include/pico/time.h:
+
+/usr/include/newlib/machine/_types.h:
+
 /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
 
 /usr/include/newlib/sys/_timespec.h:
@@ -3168,12 +3304,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
 
-/usr/include/newlib/sys/sched.h:
-
-/usr/include/newlib/sys/_stdint.h:
-
-/usr/include/newlib/machine/stdlib.h:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
 
 /usr/include/newlib/sys/_pthreadtypes.h:
@@ -3182,21 +3312,11 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
-
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
 
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
 
 /usr/include/newlib/machine/endian.h:
 
@@ -3210,11 +3330,15 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/hid/hid.h:
 
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:
+
 /usr/include/newlib/sys/select.h:
 
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_timeout.h:
+/usr/include/newlib/c++/10.3.1/cassert:
 
-/usr/include/newlib/sys/timespec.h:
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
+
+/usr/include/newlib/strings.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_usb_reset_interface/include/pico/usb_reset_interface.h:
 
@@ -3225,6 +3349,34 @@ generated/pico_base/pico/config_autogen.h:
 /usr/include/newlib/sys/types.h:
 
 /usr/include/newlib/machine/types.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/platform.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
+
+/usr/include/newlib/sys/timespec.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_timeout.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c:
 
@@ -3238,15 +3390,47 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
 
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
+
 /usr/include/newlib/time.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/datetime.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/device/dcd.h:
+
+/usr/include/newlib/c++/10.3.1/cstdlib:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+
+/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
+
+../ws2812.pio.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 
@@ -3259,26 +3443,6 @@ generated/pico_base/pico/config_autogen.h:
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/device/usbd.h:
-
-/usr/include/newlib/string.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
-
-/usr/include/newlib/c++/10.3.1/cassert:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
-
-/usr/include/newlib/strings.h:
-
-/usr/include/newlib/sys/string.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
 
@@ -3321,31 +3485,3 @@ generated/pico_base/pico/version.h:
 /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
 
 /home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/device/dcd.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_time/include/pico/time.h:
-
-/usr/include/newlib/machine/_types.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
-
-/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
-
-/usr/include/newlib/sys/reent.h:
-
-/usr/include/newlib/alloca.h:

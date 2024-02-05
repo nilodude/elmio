@@ -14,8 +14,15 @@ add_executable(elmio
     elmio.c
 )
 
+
 pico_enable_stdio_usb(elmio 1)
 pico_enable_stdio_uart(elmio 1)
 pico_add_extra_outputs(elmio)
 
-target_link_libraries(elmio pico_stdlib)
+target_link_libraries(  
+    elmio
+    pico_stdlib
+    hardware_dma
+    hardware_pio
+    hardware_irq
+)

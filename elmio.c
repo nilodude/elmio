@@ -1,12 +1,28 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "pico/binary_info.h"
+#include "hardware/pio.h"
+#include "hardware/clocks.h"
+#include "ws2812.pio.h"
 
 const uint LED_PIN = 25; //GPIO25
-const uint BUTTON1_PIN = 20; //GPIO20
-const uint BUTTON2_PIN = 21; //GPIO21
-const uint LEDS_PIN = 19; //GPIO19
+const uint BUTTON1_PIN = 16; //GPIO16
+const uint BUTTON2_PIN = 17; //GPIO17
+const uint LEDS_PIN = 15; //GPIO15
+
+static inline void put_pixel(uint32_t pixel_grb) {
+  pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
+}
+
+static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b) {
+  return ((uint32_t)(r) << 8) |
+         ((uint32_t)(g) << 16) |
+         (uint32_t)(b);
+}
 
 int main() {
 
@@ -27,11 +43,20 @@ int main() {
 
     gpio_init(BUTTON1_PIN);
     gpio_set_dir(BUTTON1_PIN, GPIO_IN);
-    gpio_pull_up(BUTTON1_PIN);
+    // gpio_pull_up(BUTTON1_PIN);
 
     gpio_init(BUTTON2_PIN);
     gpio_set_dir(BUTTON2_PIN, GPIO_IN);
     gpio_pull_up(BUTTON2_PIN);
+
+
+    PIO pio = pio0;
+    int sm = 0;
+    uint offset = pio_add_program(pio, &ws2812_program);
+    char str[12];
+
+    ws2812_program_init(pio, sm, offset, LEDS_PIN, 800000, false);
+    bool purple = true;
 
     while (1) {
         bool button1 = gpio_get(BUTTON1_PIN);
@@ -39,10 +64,19 @@ int main() {
         
         gpio_put(LED_PIN, button1);
 
+        // printf("%d %d\n", button1, button2);
 
-        printf("%d %d\n", button1, button2);
-
+        put_pixel(purple ? urgb_u32(0x10, 0, 0) : urgb_u32(0, 0, 0x10));
+        printf("%s\n", purple ? "red" : "blue");
+        
+        purple = !purple;
 
         sleep_ms(100);
+
+        // // Clear all pixels
+        // for (int i = 0; i <= 1; i++) {
+        //   put_pixel(urgb_u32(0, 0, 0));  // Black or off
+        //   sleep_ms(1000);
+        // }
     }
 }
