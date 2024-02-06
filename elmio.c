@@ -156,10 +156,12 @@ int main() {
         handleEncoder();
 
         handleButtons();
-        
+
+        uint encoder = counter > 255 ? abs(counter) % 255 : abs(counter);
+
         for (int i = 0; i < NUMPIXELS; i++) {
-          put_pixel(shouldSwitch ? urgb_u32(0x05, 0x10, 0x05) : urgb_u32(0x05, 0, 0x10));
-          put_pixel(!shouldSwitch ? urgb_u32(0x05, 0x10, 0x05) : urgb_u32(0x05, 0, 0x10));
+          put_pixel(shouldSwitch ? urgb_u32(encoder, 0x10, 0x05) : urgb_u32(0x05, encoder, 0x10));
+          put_pixel(!shouldSwitch ? urgb_u32(encoder, 0x10, 0x05) : urgb_u32(0x05, encoder, 0x10));
         }
 
         sleep_ms(1);        
