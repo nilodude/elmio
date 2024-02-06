@@ -59,30 +59,39 @@ int main() {
     ws2812_program_init(pio, sm, offset, LEDS_PIN, 800000, false);
 
     bool shouldSwitch = false;
-    bool button1 = false;
-    bool button2 = false;
+    bool button1pressed = false;
+    bool button2pressed = false;
 
     while (1) {
-        // gpio_get(BUTTON2_PIN);
-        gpio_put(LED_PIN, gpio_get(BUTTON1_PIN));
+        gpio_put(LED_PIN, !gpio_get(BUTTON1_PIN) || !gpio_get(BUTTON2_PIN));
         
+        //BUTTON1
         while(!gpio_get(BUTTON1_PIN)){
-          button1 = true;
+          button1pressed = true;
+        }
+        if(button1pressed){
+          shouldSwitch = !shouldSwitch;
+          button1pressed = false;
         }
 
-        if(button1){
+        //BUTTON2
+        while(!gpio_get(BUTTON2_PIN)){
+          button2pressed = true;
+        }
+
+        if(button2pressed){
           shouldSwitch = !shouldSwitch;
-          button1 = false;
-        }        
+          button2pressed = false;
+        }         
 
         for (int i = 0; i <= NUMPIXELS; i++) {
           put_pixel(shouldSwitch ? urgb_u32(0x10, 0, 0) : urgb_u32(0, 0, 0x10));
           put_pixel(!shouldSwitch ? urgb_u32(0x10, 0, 0) : urgb_u32(0, 0, 0x10));
-          
         }
+        
         sleep_ms(300);
         
-        printf("%s\n", button1 ? "red" : "blue");
+        printf("%s\n", shouldSwitch ? "red" : "blue");
         
     }
 }
