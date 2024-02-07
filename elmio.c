@@ -50,6 +50,7 @@ const uint SEG_E = 7;
 const uint SEG_F = 6;
 const uint SEG_G = 5;
 const uint SEG_H = 1;
+const uint SEG_I = 0;
 
 static inline void put_pixel(uint32_t pixel_grb) {
   pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
@@ -127,6 +128,24 @@ static inline void setup(){
 
     gpio_init(SEG_C);
     gpio_set_dir(SEG_C, GPIO_OUT);
+
+    gpio_init(SEG_D);
+    gpio_set_dir(SEG_D, GPIO_OUT);
+
+    gpio_init(SEG_E);
+    gpio_set_dir(SEG_E, GPIO_OUT);
+
+    gpio_init(SEG_F);
+    gpio_set_dir(SEG_F, GPIO_OUT);
+
+    gpio_init(SEG_G);
+    gpio_set_dir(SEG_G, GPIO_OUT);
+
+    gpio_init(SEG_H);
+    gpio_set_dir(SEG_H, GPIO_OUT);
+
+    gpio_init(SEG_I);
+    gpio_set_dir(SEG_I, GPIO_OUT);
 }
 
 static inline void handleEncoder(){
@@ -205,6 +224,12 @@ int main() {
         gpio_put(SEG_A, 0);
         gpio_put(SEG_B, 0);
         gpio_put(SEG_C, 0);
+        gpio_put(SEG_D, 0);
+        gpio_put(SEG_E, 0);
+        gpio_put(SEG_F, 0);
+        gpio_put(SEG_G, 0);
+        gpio_put(SEG_H, 0);
+        gpio_put(SEG_I, 0);
 
         sleep_ms(1);        
     }
