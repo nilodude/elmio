@@ -52,6 +52,10 @@ const uint SEG_G = 5;
 const uint SEG_H = 1;
 const uint SEG_I = 0;
 
+const uint display[] = {SEG_1, SEG_2, SEG_3, SEG_4};
+uint currentDisplay = 0;
+uint lastDisplay = 0;
+
 static inline void put_pixel(uint32_t pixel_grb) {
   pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
 }
@@ -146,6 +150,8 @@ static inline void setup(){
 
     gpio_init(SEG_I);
     gpio_set_dir(SEG_I, GPIO_OUT);
+
+
 }
 
 static inline void handleEncoder(){
@@ -154,8 +160,12 @@ static inline void handleEncoder(){
   if (currCLK != lastCLK && currCLK){
     if(gpio_get(ENCODER_DT) != currCLK){
       counter--;
+      counter = counter == -1 ? 3 : counter;
+      currentDisplay = counter;
     }else{
       counter++;
+      counter = counter == 4 ? 0 : counter;
+      currentDisplay = counter;
     }
     printf("%d\n",counter);
   }
@@ -210,17 +220,23 @@ int main() {
         
         handleEncoder();
 
-        handleButtons();
+        // handleButtons();
 
-        uint encoder = counter > 255 ? abs(counter) % 255 : abs(counter);
+        // uint colorEncoder = counter > 255 ? abs(counter) % 255 : abs(counter);
 
-        for (int i = 0; i < NUMPIXELS; i++) {
-          put_pixel(shouldSwitch ? urgb_u32(encoder, 0x10, 0x05) : urgb_u32(0x05, encoder, 0x10));
-          put_pixel(!shouldSwitch ? urgb_u32(encoder, 0x10, 0x05) : urgb_u32(0x05, encoder, 0x10));
+        // for (int i = 0; i < NUMPIXELS; i++) {
+        //   put_pixel(shouldSwitch ? urgb_u32(colorEncoder, 0x10, 0x05) : urgb_u32(0x05, colorEncoder, 0x10));
+        //   put_pixel(!shouldSwitch ? urgb_u32(colorEncoder, 0x10, 0x05) : urgb_u32(0x05, colorEncoder, 0x10));
+        // }
+
+        gpio_put(display[currentDisplay], 1);
+
+        if(lastDisplay != currentDisplay){
+          gpio_put(display[lastDisplay],0);
+          gpio_put(display[currentDisplay], 1);
+          lastDisplay = currentDisplay;
         }
-
-        gpio_put(SEG_1, 1);
-
+        
         gpio_put(SEG_A, 0);
         gpio_put(SEG_B, 0);
         gpio_put(SEG_C, 0);
@@ -230,6 +246,8 @@ int main() {
         gpio_put(SEG_G, 0);
         gpio_put(SEG_H, 0);
         gpio_put(SEG_I, 0);
+        
+        lastDisplay = counter;
 
         sleep_ms(1);        
     }
