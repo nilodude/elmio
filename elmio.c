@@ -13,7 +13,7 @@
 const uint LED_PIN = 25; //GPIO25
 const uint BUTTON1_PIN = 16; //GPIO16
 const uint BUTTON2_PIN = 17; //GPIO17
-const uint LEDS_PIN = 15; //GPIO15
+const uint LEDS_PIN = 18; //GPIO15
 const uint NUMPIXELS = 2;
 
 const uint pins[11]={16,17,0,0,0,0,0,0,0,0,0};
@@ -44,12 +44,12 @@ const uint SEG_3 = 12;
 const uint SEG_4 = 13;
 const uint SEG_A = 15;
 const uint SEG_B = 14;
-const uint SEG_C = 9;
+const uint SEG_C = 1;
 const uint SEG_D = 8;
 const uint SEG_E = 7;
 const uint SEG_F = 6;
 const uint SEG_G = 5;
-const uint SEG_H = 1;
+const uint SEG_H = 9;
 const uint SEG_I = 0;
 
 const uint display[] = {SEG_1, SEG_2, SEG_3, SEG_4};
@@ -236,18 +236,19 @@ int main() {
           gpio_put(display[currentDisplay], 1);
           lastDisplay = currentDisplay;
         }
-        
-        gpio_put(SEG_A, 0);
-        gpio_put(SEG_B, 0);
-        gpio_put(SEG_C, 0);
-        gpio_put(SEG_D, 0);
-        gpio_put(SEG_E, 0);
-        gpio_put(SEG_F, 0);
+        // sleep_ms(100);  
+        gpio_put(display[currentDisplay], 1);
+        gpio_put(SEG_A, 1);
+        gpio_put(SEG_B, 1);
+        gpio_put(SEG_C, 1);
+        gpio_put(SEG_D, 1);
+        gpio_put(SEG_E, 1);
+        gpio_put(SEG_F, 1);
         gpio_put(SEG_G, 0);
-        gpio_put(SEG_H, 0);
-        gpio_put(SEG_I, 0);
+        gpio_put(SEG_H, 1);
+        gpio_put(SEG_I, 1);
         
-        lastDisplay = counter;
+        lastDisplay = currentDisplay;
 
         sleep_ms(1);        
     }
