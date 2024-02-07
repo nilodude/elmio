@@ -38,6 +38,19 @@ bool pushButton = 0;
 
 bool shouldSwitch = false; //testing led switching when buttons clicked
 
+const uint SEG_1 = 10;
+const uint SEG_2 = 11;
+const uint SEG_3 = 12;
+const uint SEG_4 = 13;
+const uint SEG_A = 15;
+const uint SEG_B = 14;
+const uint SEG_C = 9;
+const uint SEG_D = 8;
+const uint SEG_E = 7;
+const uint SEG_F = 6;
+const uint SEG_G = 5;
+const uint SEG_H = 1;
+
 static inline void put_pixel(uint32_t pixel_grb) {
   pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
 }
@@ -73,6 +86,12 @@ static inline void setup(){
     gpio_set_dir(BUTTON2_PIN, GPIO_IN);
     gpio_pull_up(BUTTON2_PIN);
 
+
+    for (int i = 0; i < NUMPIXELS; i++) {
+      struct Button button = {pins[i],urgb_u32(0x05, 0x10, 0x05),false};
+      buttons[i] = button;
+    }
+
     //ENCODER
     gpio_init(ENCODER_CLK);
     gpio_set_dir(ENCODER_CLK, GPIO_IN);
@@ -87,10 +106,27 @@ static inline void setup(){
     gpio_set_dir(ENCODER_SW, GPIO_IN);
     gpio_pull_up(ENCODER_SW);
 
-    for (int i = 0; i < NUMPIXELS; i++) {
-      struct Button button = {pins[i],urgb_u32(0x05, 0x10, 0x05),false};
-      buttons[i] = button;
-    }
+    //7 SEGMENT DISPLAY
+    gpio_init(SEG_1);
+    gpio_set_dir(SEG_1, GPIO_OUT);
+
+    gpio_init(SEG_2);
+    gpio_set_dir(SEG_2, GPIO_OUT);
+
+    gpio_init(SEG_3);
+    gpio_set_dir(SEG_3, GPIO_OUT);
+
+    gpio_init(SEG_4);
+    gpio_set_dir(SEG_4, GPIO_OUT);
+
+    gpio_init(SEG_A);
+    gpio_set_dir(SEG_A, GPIO_OUT);
+
+    gpio_init(SEG_B);
+    gpio_set_dir(SEG_B, GPIO_OUT);
+
+    gpio_init(SEG_C);
+    gpio_set_dir(SEG_C, GPIO_OUT);
 }
 
 static inline void handleEncoder(){
@@ -163,6 +199,12 @@ int main() {
           put_pixel(shouldSwitch ? urgb_u32(encoder, 0x10, 0x05) : urgb_u32(0x05, encoder, 0x10));
           put_pixel(!shouldSwitch ? urgb_u32(encoder, 0x10, 0x05) : urgb_u32(0x05, encoder, 0x10));
         }
+
+        gpio_put(SEG_1, 1);
+
+        gpio_put(SEG_A, 0);
+        gpio_put(SEG_B, 0);
+        gpio_put(SEG_C, 0);
 
         sleep_ms(1);        
     }
