@@ -57,16 +57,18 @@ const uint MCP_ALL_PINS_OUTPUT = 0x0000;
 const uint I2C_GPIO_PIN_SDA = 6;
 const uint I2C_GPIO_PIN_SLC = 7;
 
-Mcp23017 mcp1(i2c0, 0x21);// MCP with A0,1,2 to GND
+Mcp23017 mcp1(i2c0, 0x21);// // MCP with A0 to +3, A1,2 to GND
 
 
 
 static inline void setup_output(Mcp23017 mcp) {
 	int result;
 
-	result = mcp.setup(false, true);
-	result = mcp.set_io_direction(MCP_ALL_PINS_OUTPUT);
+	result = mcp.setup(true, false);
+	result = mcp.set_io_direction(0);
   printf("%s", result == -2 ? "error setup" : "setup ok");
+
+  //TODO: probably need +3V in A0 to work properly
 }
 
 
