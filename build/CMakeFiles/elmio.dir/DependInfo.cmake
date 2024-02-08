@@ -117,6 +117,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/hw"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "../modules/pico-mcp23017/api"
+  "../modules/pico-interfaces"
+  "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/include"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   )
@@ -156,6 +159,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
@@ -184,6 +188,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/elmio/modules/pico-mcp23017/source/mcp23017.cpp" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj" "gcc" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/elmio/modules/pico-mcp23017/source/mcp23017_input.cpp" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj" "gcc" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/elmio/modules/pico-mcp23017/source/mcp23017_latching_output.cpp" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj" "gcc" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj.d"
   )
 
 # Targets to which this target links.

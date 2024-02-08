@@ -167,3 +167,7 @@
 /home/nilodude/desarrollo/picow/pico/elmio/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/rebuild_cache.dir
 /home/nilodude/desarrollo/picow/pico/elmio/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /home/nilodude/desarrollo/picow/pico/elmio/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+/home/nilodude/desarrollo/picow/pico/elmio/build/modules/pico-interfaces/CMakeFiles/edit_cache.dir
+/home/nilodude/desarrollo/picow/pico/elmio/build/modules/pico-interfaces/CMakeFiles/rebuild_cache.dir
+/home/nilodude/desarrollo/picow/pico/elmio/build/modules/pico-mcp23017/CMakeFiles/edit_cache.dir
+/home/nilodude/desarrollo/picow/pico/elmio/build/modules/pico-mcp23017/CMakeFiles/rebuild_cache.dir

@@ -1360,6 +1360,133 @@ Discarded input sections
  .comment       0x0000000000000000       0x34 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZN8Mcp23017C2EP8i2c_insth
+                0x0000000000000000        0xc CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301714write_registerEhh
+                0x0000000000000000       0x28 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301713read_registerEh
+                0x0000000000000000       0x44 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301720write_dual_registersEhi
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301719read_dual_registersEh
+                0x0000000000000000       0x48 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp230175setupEbb
+                0x0000000000000000       0x74 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301724setup_bank_configurationEibb
+                0x0000000000000000       0x38 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301722get_last_interrupt_pinEv
+                0x0000000000000000       0xec CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301720get_interrupt_valuesEv
+                0x0000000000000000       0x48 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZN8Mcp2301727update_and_get_input_valuesEv
+                0x0000000000000000       0x4c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301724get_last_input_pin_valueEi
+                0x0000000000000000       0x10 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301725get_last_input_pin_valuesEv
+                0x0000000000000000        0x4 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301711get_addressEv
+                0x0000000000000000        0x4 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301716set_io_directionEi
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301710set_pullupEi
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301718set_interrupt_typeEi
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301716enable_interruptEi
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZN8Mcp2301719set_all_output_bitsEi
+                0x0000000000000000       0x30 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZN8Mcp2301722set_output_bit_for_pinEib
+                0x0000000000000000       0x1c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301722get_output_bit_for_pinEi
+                0x0000000000000000       0x10 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text._ZNK8Mcp2301712flush_outputEv
+                0x0000000000000000       0x30 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .comment       0x0000000000000000       0x34 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .text._ZNK14Mcp23017_input17get_current_stateEv
+                0x0000000000000000        0xc CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .text._ZN14Mcp23017_inputC2ER8Mcp23017i
+                0x0000000000000000       0x10 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .rodata._ZTV14Mcp23017_input
+                0x0000000000000000        0xc CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .comment       0x0000000000000000       0x34 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .text._ZN24Mcp23017_latching_output16set_output_stateEb
+                0x0000000000000000       0x24 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .text._ZN24Mcp23017_latching_output22desired_state_achievedEv
+                0x0000000000000000       0x20 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .text._ZN24Mcp23017_latching_outputC2ER8Mcp23017ii
+                0x0000000000000000       0x14 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .rodata._ZTV24Mcp23017_latching_output
+                0x0000000000000000       0x10 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .comment       0x0000000000000000       0x34 CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_hw_index
+                0x0000000000000000       0x20 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_get_hw
+                0x0000000000000000       0x1c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_get_write_available
+                0x0000000000000000       0x24 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_get_read_available
+                0x0000000000000000       0x1c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.reset_block
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.unreset_block_wait
+                0x0000000000000000       0x3c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .data.i2c0_inst
+                0x0000000000000000        0x8 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .data.i2c1_inst
+                0x0000000000000000        0x8 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_reset
+                0x0000000000000000       0x28 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_unreset
+                0x0000000000000000       0x28 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_init
+                0x0000000000000000       0x62 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_deinit
+                0x0000000000000000       0x18 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .rodata        0x0000000000000000       0x70 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_set_baudrate
+                0x0000000000000000      0x158 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_set_slave_mode
+                0x0000000000000000       0xba CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking_internal
+                0x0000000000000000      0x238 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking
+                0x0000000000000000       0x3e CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking_until
+                0x0000000000000000       0x52 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_timeout_per_char_us
+                0x0000000000000000       0x5a CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_blocking_internal
+                0x0000000000000000      0x1aa CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_blocking
+                0x0000000000000000       0x3e CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_blocking_until
+                0x0000000000000000       0x52 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_timeout_per_char_us
+                0x0000000000000000       0x5a CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .rodata.__func__.0
+                0x0000000000000000       0x11 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .comment       0x0000000000000000       0x34 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -1444,9 +1571,9 @@ Discarded input sections
                 0x0000000000000000       0x70 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.__func__.0
                 0x0000000000000000       0x13 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x0000000000000000        0x0 /tmp/cc4Uoofk.o
- .data          0x0000000000000000        0x0 /tmp/cc4Uoofk.o
- .bss           0x0000000000000000        0x0 /tmp/cc4Uoofk.o
+ .text          0x0000000000000000        0x0 /tmp/cct9AcEG.o
+ .data          0x0000000000000000        0x0 /tmp/cct9AcEG.o
+ .bss           0x0000000000000000        0x0 /tmp/cct9AcEG.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1710,7 +1837,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc4Uoofk.o
+ .boot2         0x0000000010000000      0x100 /tmp/cct9AcEG.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3585,9 +3712,13 @@ LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyu
 LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+LOAD CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+LOAD CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+LOAD CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 LOAD CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD /tmp/cc4Uoofk.o
+LOAD /tmp/cct9AcEG.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3707,7 +3838,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000800       0x2c CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x000000000000082c       0x22 /tmp/cc4Uoofk.o
+                0x000000000000082c       0x22 /tmp/cct9AcEG.o
  .ARM.attributes
                 0x000000000000084e       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

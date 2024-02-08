@@ -1007,6 +1007,30 @@ home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1759,6 +1783,78 @@ home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/uniqu
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+modules/pico-mcp23017/source/mcp23017.obj: modules/pico-mcp23017/source/mcp23017.cpp.obj
+.PHONY : modules/pico-mcp23017/source/mcp23017.obj
+
+# target to build an object file
+modules/pico-mcp23017/source/mcp23017.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj
+.PHONY : modules/pico-mcp23017/source/mcp23017.cpp.obj
+
+modules/pico-mcp23017/source/mcp23017.i: modules/pico-mcp23017/source/mcp23017.cpp.i
+.PHONY : modules/pico-mcp23017/source/mcp23017.i
+
+# target to preprocess a source file
+modules/pico-mcp23017/source/mcp23017.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.i
+.PHONY : modules/pico-mcp23017/source/mcp23017.cpp.i
+
+modules/pico-mcp23017/source/mcp23017.s: modules/pico-mcp23017/source/mcp23017.cpp.s
+.PHONY : modules/pico-mcp23017/source/mcp23017.s
+
+# target to generate assembly for a file
+modules/pico-mcp23017/source/mcp23017.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.s
+.PHONY : modules/pico-mcp23017/source/mcp23017.cpp.s
+
+modules/pico-mcp23017/source/mcp23017_input.obj: modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+.PHONY : modules/pico-mcp23017/source/mcp23017_input.obj
+
+# target to build an object file
+modules/pico-mcp23017/source/mcp23017_input.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+.PHONY : modules/pico-mcp23017/source/mcp23017_input.cpp.obj
+
+modules/pico-mcp23017/source/mcp23017_input.i: modules/pico-mcp23017/source/mcp23017_input.cpp.i
+.PHONY : modules/pico-mcp23017/source/mcp23017_input.i
+
+# target to preprocess a source file
+modules/pico-mcp23017/source/mcp23017_input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.i
+.PHONY : modules/pico-mcp23017/source/mcp23017_input.cpp.i
+
+modules/pico-mcp23017/source/mcp23017_input.s: modules/pico-mcp23017/source/mcp23017_input.cpp.s
+.PHONY : modules/pico-mcp23017/source/mcp23017_input.s
+
+# target to generate assembly for a file
+modules/pico-mcp23017/source/mcp23017_input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.s
+.PHONY : modules/pico-mcp23017/source/mcp23017_input.cpp.s
+
+modules/pico-mcp23017/source/mcp23017_latching_output.obj: modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+.PHONY : modules/pico-mcp23017/source/mcp23017_latching_output.obj
+
+# target to build an object file
+modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+.PHONY : modules/pico-mcp23017/source/mcp23017_latching_output.cpp.obj
+
+modules/pico-mcp23017/source/mcp23017_latching_output.i: modules/pico-mcp23017/source/mcp23017_latching_output.cpp.i
+.PHONY : modules/pico-mcp23017/source/mcp23017_latching_output.i
+
+# target to preprocess a source file
+modules/pico-mcp23017/source/mcp23017_latching_output.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.i
+.PHONY : modules/pico-mcp23017/source/mcp23017_latching_output.cpp.i
+
+modules/pico-mcp23017/source/mcp23017_latching_output.s: modules/pico-mcp23017/source/mcp23017_latching_output.cpp.s
+.PHONY : modules/pico-mcp23017/source/mcp23017_latching_output.s
+
+# target to generate assembly for a file
+modules/pico-mcp23017/source/mcp23017_latching_output.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_latching_output.cpp.s
+.PHONY : modules/pico-mcp23017/source/mcp23017_latching_output.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1874,6 +1970,9 @@ help:
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -1968,6 +2067,15 @@ help:
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... modules/pico-mcp23017/source/mcp23017.obj"
+	@echo "... modules/pico-mcp23017/source/mcp23017.i"
+	@echo "... modules/pico-mcp23017/source/mcp23017.s"
+	@echo "... modules/pico-mcp23017/source/mcp23017_input.obj"
+	@echo "... modules/pico-mcp23017/source/mcp23017_input.i"
+	@echo "... modules/pico-mcp23017/source/mcp23017_input.s"
+	@echo "... modules/pico-mcp23017/source/mcp23017_latching_output.obj"
+	@echo "... modules/pico-mcp23017/source/mcp23017_latching_output.i"
+	@echo "... modules/pico-mcp23017/source/mcp23017_latching_output.s"
 .PHONY : help
 
 

@@ -14,6 +14,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cfgcmd.txt.in"
+  "../modules/pico-interfaces/CMakeLists.txt"
+  "../modules/pico-mcp23017/CMakeLists.txt"
   "../pico_sdk_import.cmake"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/CMakeLists.txt"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/cmake/Platform/PICO.cmake"
@@ -234,6 +236,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico-sdk/src/rp2040/hardware_regs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/src/rp2040/hardware_structs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "modules/pico-interfaces/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "modules/pico-mcp23017/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

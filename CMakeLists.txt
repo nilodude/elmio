@@ -14,6 +14,9 @@ add_executable(elmio
     elmio.c
 )
 
+add_subdirectory(modules/pico-interfaces)
+add_subdirectory(modules/pico-mcp23017)
+
 
 pico_enable_stdio_usb(elmio 1)
 pico_enable_stdio_uart(elmio 1)
@@ -22,6 +25,7 @@ pico_add_extra_outputs(elmio)
 target_link_libraries(  
     elmio
     pico_stdlib
+    pico_mcp23017
     hardware_dma
     hardware_pio
     hardware_irq
