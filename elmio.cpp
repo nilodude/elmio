@@ -9,6 +9,8 @@
 #include "hardware/pio.h"
 #include "hardware/clocks.h"
 #include "ws2812.pio.h"
+#include "hardware/i2c.h"
+#include "mcp23017.h"
 
 const uint LED_PIN = 25; //GPIO25
 const uint BUTTON1_PIN = 16; //GPIO16
@@ -38,23 +40,37 @@ bool pushButton = 0;
 
 bool shouldSwitch = false; //testing led switching when buttons clicked
 
-const uint SEG_1 = 10;
-const uint SEG_2 = 11;
-const uint SEG_3 = 12;
-const uint SEG_4 = 13;
-const uint SEG_A = 15;
-const uint SEG_B = 14;
-const uint SEG_C = 1;
-const uint SEG_D = 8;
-const uint SEG_E = 7;
-const uint SEG_F = 6;
-const uint SEG_G = 5;
-const uint SEG_H = 9;
-const uint SEG_I = 0;
-
-const uint display[] = {SEG_1, SEG_2, SEG_3, SEG_4};
 uint currentDisplay = 0;
 uint lastDisplay = 0;
+
+
+
+
+static const bool MIRROR_INTERRUPTS = true; //save a gpio by mirroring interrupts across both banks
+static const bool OPEN_DRAIN_INTERRUPT_ACTIVE = false;
+static const bool POLARITY_INTERRUPT_ACTIVE_LOW = false;
+static const int MCP_ALL_PINS_PULL_UP = 0xffff;
+static const int MCP_ALL_PINS_COMPARE_TO_LAST = 0x0000;
+static const int MCP_ALL_PINS_INTERRUPT_ENABLED = 0xffff;
+
+const uint MCP_ALL_PINS_OUTPUT = 0x0000;
+const uint I2C_GPIO_PIN_SDA = 6;
+const uint I2C_GPIO_PIN_SLC = 7;
+
+Mcp23017 mcp1(i2c0, 0x21);// MCP with A0,1,2 to GND
+
+
+
+static inline void setup_output(Mcp23017 mcp) {
+	int result;
+
+	result = mcp.setup(false, true);
+	result = mcp.set_io_direction(MCP_ALL_PINS_OUTPUT);
+  printf("%s", result == -2 ? "error setup" : "setup ok");
+}
+
+
+
 
 static inline void put_pixel(uint32_t pixel_grb) {
   pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
@@ -75,6 +91,9 @@ static inline void setup(){
     bi_decl(bi_1pin_with_name(LEDS_PIN, "neopixel strip"));
 
     stdio_init_all();
+    sleep_ms(2000);
+    
+
 
     //LED BUTTONS
     gpio_init(LED_PIN);
@@ -111,47 +130,7 @@ static inline void setup(){
     gpio_set_dir(ENCODER_SW, GPIO_IN);
     gpio_pull_up(ENCODER_SW);
 
-    //7 SEGMENT DISPLAY
-    gpio_init(SEG_1);
-    gpio_set_dir(SEG_1, GPIO_OUT);
-
-    gpio_init(SEG_2);
-    gpio_set_dir(SEG_2, GPIO_OUT);
-
-    gpio_init(SEG_3);
-    gpio_set_dir(SEG_3, GPIO_OUT);
-
-    gpio_init(SEG_4);
-    gpio_set_dir(SEG_4, GPIO_OUT);
-
-    gpio_init(SEG_A);
-    gpio_set_dir(SEG_A, GPIO_OUT);
-
-    gpio_init(SEG_B);
-    gpio_set_dir(SEG_B, GPIO_OUT);
-
-    gpio_init(SEG_C);
-    gpio_set_dir(SEG_C, GPIO_OUT);
-
-    gpio_init(SEG_D);
-    gpio_set_dir(SEG_D, GPIO_OUT);
-
-    gpio_init(SEG_E);
-    gpio_set_dir(SEG_E, GPIO_OUT);
-
-    gpio_init(SEG_F);
-    gpio_set_dir(SEG_F, GPIO_OUT);
-
-    gpio_init(SEG_G);
-    gpio_set_dir(SEG_G, GPIO_OUT);
-
-    gpio_init(SEG_H);
-    gpio_set_dir(SEG_H, GPIO_OUT);
-
-    gpio_init(SEG_I);
-    gpio_set_dir(SEG_I, GPIO_OUT);
-
-
+   
 }
 
 static inline void handleEncoder(){
@@ -208,6 +187,15 @@ int main() {
 
     setup();
 
+    i2c_init(i2c0, 100000);
+	  gpio_set_function(I2C_GPIO_PIN_SDA, GPIO_FUNC_I2C);
+	  gpio_set_function(I2C_GPIO_PIN_SLC, GPIO_FUNC_I2C);
+	  gpio_pull_up(I2C_GPIO_PIN_SDA);
+	  gpio_pull_up(I2C_GPIO_PIN_SLC);
+
+	  setup_output(mcp1);
+
+
     PIO pio = pio0;
     int sm = 0;
     uint offset = pio_add_program(pio, &ws2812_program);
@@ -215,41 +203,21 @@ int main() {
 
     ws2812_program_init(pio, sm, offset, LEDS_PIN, 800000, false);
 
+    mcp1.set_all_output_bits(0xFFFF);
+
+	  printf("Setting MCP(0x21) pin 4\n");
+
+	  mcp1.set_output_bit_for_pin(4, false);
+
+	  mcp1.flush_output();
+
     while (1) {
         gpio_put(LED_PIN, !gpio_get(BUTTON1_PIN) || !gpio_get(BUTTON2_PIN));
         
         handleEncoder();
 
-        // handleButtons();
-
-        // uint colorEncoder = counter > 255 ? abs(counter) % 255 : abs(counter);
-
-        // for (int i = 0; i < NUMPIXELS; i++) {
-        //   put_pixel(shouldSwitch ? urgb_u32(colorEncoder, 0x10, 0x05) : urgb_u32(0x05, colorEncoder, 0x10));
-        //   put_pixel(!shouldSwitch ? urgb_u32(colorEncoder, 0x10, 0x05) : urgb_u32(0x05, colorEncoder, 0x10));
-        // }
-
-        gpio_put(display[currentDisplay], 1);
-
-        if(lastDisplay != currentDisplay){
-          gpio_put(display[lastDisplay],0);
-          gpio_put(display[currentDisplay], 1);
-          lastDisplay = currentDisplay;
-        }
-        // sleep_ms(100);  
-        gpio_put(display[currentDisplay], 1);
-        gpio_put(SEG_A, 1);
-        gpio_put(SEG_B, 1);
-        gpio_put(SEG_C, 1);
-        gpio_put(SEG_D, 1);
-        gpio_put(SEG_E, 1);
-        gpio_put(SEG_F, 1);
-        gpio_put(SEG_G, 0);
-        gpio_put(SEG_H, 1);
-        gpio_put(SEG_I, 1);
         
-        lastDisplay = currentDisplay;
 
         sleep_ms(1);        
     }
-}
+}     

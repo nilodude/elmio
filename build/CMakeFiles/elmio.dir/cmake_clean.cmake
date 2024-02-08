@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/elmio.dir/elmio.c.obj"
-  "CMakeFiles/elmio.dir/elmio.c.obj.d"
+  "CMakeFiles/elmio.dir/elmio.cpp.obj"
+  "CMakeFiles/elmio.dir/elmio.cpp.obj.d"
   "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"

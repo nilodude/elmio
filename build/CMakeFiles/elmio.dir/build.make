@@ -69,19 +69,19 @@ include CMakeFiles/elmio.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/elmio.dir/flags.make
 
-CMakeFiles/elmio.dir/elmio.c.obj: CMakeFiles/elmio.dir/flags.make
-CMakeFiles/elmio.dir/elmio.c.obj: ../elmio.c
-CMakeFiles/elmio.dir/elmio.c.obj: CMakeFiles/elmio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nilodude/desarrollo/picow/pico/elmio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/elmio.dir/elmio.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/elmio.dir/elmio.c.obj -MF CMakeFiles/elmio.dir/elmio.c.obj.d -o CMakeFiles/elmio.dir/elmio.c.obj -c /home/nilodude/desarrollo/picow/pico/elmio/elmio.c
+CMakeFiles/elmio.dir/elmio.cpp.obj: CMakeFiles/elmio.dir/flags.make
+CMakeFiles/elmio.dir/elmio.cpp.obj: ../elmio.cpp
+CMakeFiles/elmio.dir/elmio.cpp.obj: CMakeFiles/elmio.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nilodude/desarrollo/picow/pico/elmio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/elmio.dir/elmio.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/elmio.dir/elmio.cpp.obj -MF CMakeFiles/elmio.dir/elmio.cpp.obj.d -o CMakeFiles/elmio.dir/elmio.cpp.obj -c /home/nilodude/desarrollo/picow/pico/elmio/elmio.cpp
 
-CMakeFiles/elmio.dir/elmio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elmio.dir/elmio.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nilodude/desarrollo/picow/pico/elmio/elmio.c > CMakeFiles/elmio.dir/elmio.c.i
+CMakeFiles/elmio.dir/elmio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elmio.dir/elmio.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nilodude/desarrollo/picow/pico/elmio/elmio.cpp > CMakeFiles/elmio.dir/elmio.cpp.i
 
-CMakeFiles/elmio.dir/elmio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elmio.dir/elmio.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nilodude/desarrollo/picow/pico/elmio/elmio.c -o CMakeFiles/elmio.dir/elmio.c.s
+CMakeFiles/elmio.dir/elmio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elmio.dir/elmio.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nilodude/desarrollo/picow/pico/elmio/elmio.cpp -o CMakeFiles/elmio.dir/elmio.cpp.s
 
 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/elmio.dir/flags.make
 CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -1124,7 +1124,7 @@ CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common
 
 # Object files for target elmio
 elmio_OBJECTS = \
-"CMakeFiles/elmio.dir/elmio.c.obj" \
+"CMakeFiles/elmio.dir/elmio.cpp.obj" \
 "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -1204,7 +1204,7 @@ elmio_OBJECTS = \
 # External object files for target elmio
 elmio_EXTERNAL_OBJECTS =
 
-elmio.elf: CMakeFiles/elmio.dir/elmio.c.obj
+elmio.elf: CMakeFiles/elmio.dir/elmio.cpp.obj
 elmio.elf: CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 elmio.elf: CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 elmio.elf: CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj

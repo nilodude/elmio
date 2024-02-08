@@ -60,7 +60,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "PICO_BUILD=1"
   "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
-  "PICO_CXX_ENABLE_EXCEPTIONS=0"
+  "PICO_CXX_ENABLE_EXCEPTIONS=1"
   "PICO_NO_FLASH=0"
   "PICO_NO_HARDWARE=0"
   "PICO_ON_DEVICE=1"
@@ -126,7 +126,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nilodude/desarrollo/picow/pico/elmio/elmio.c" "CMakeFiles/elmio.dir/elmio.c.obj" "gcc" "CMakeFiles/elmio.dir/elmio.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"
@@ -187,6 +186,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
+  "/home/nilodude/desarrollo/picow/pico/elmio/elmio.cpp" "CMakeFiles/elmio.dir/elmio.cpp.obj" "gcc" "CMakeFiles/elmio.dir/elmio.cpp.obj.d"
   "/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/elmio.dir/home/nilodude/desarrollo/picow/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   "/home/nilodude/desarrollo/picow/pico/elmio/modules/pico-mcp23017/source/mcp23017.cpp" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj" "gcc" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017.cpp.obj.d"
   "/home/nilodude/desarrollo/picow/pico/elmio/modules/pico-mcp23017/source/mcp23017_input.cpp" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj" "gcc" "CMakeFiles/elmio.dir/modules/pico-mcp23017/source/mcp23017_input.cpp.obj.d"

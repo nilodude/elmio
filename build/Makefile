@@ -207,29 +207,29 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-elmio.obj: elmio.c.obj
+elmio.obj: elmio.cpp.obj
 .PHONY : elmio.obj
 
 # target to build an object file
-elmio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/elmio.c.obj
-.PHONY : elmio.c.obj
+elmio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/elmio.cpp.obj
+.PHONY : elmio.cpp.obj
 
-elmio.i: elmio.c.i
+elmio.i: elmio.cpp.i
 .PHONY : elmio.i
 
 # target to preprocess a source file
-elmio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/elmio.c.i
-.PHONY : elmio.c.i
+elmio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/elmio.cpp.i
+.PHONY : elmio.cpp.i
 
-elmio.s: elmio.c.s
+elmio.s: elmio.cpp.s
 .PHONY : elmio.s
 
 # target to generate assembly for a file
-elmio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/elmio.c.s
-.PHONY : elmio.c.s
+elmio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elmio.dir/build.make CMakeFiles/elmio.dir/elmio.cpp.s
+.PHONY : elmio.cpp.s
 
 home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/nilodude/desarrollo/picow/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
